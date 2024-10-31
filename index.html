@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmotiFace LED Project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2d2d2d;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h2 {
+            color: #4CAF50;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .source-code {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            font-family: monospace;
+        }
+
+        .source-code code {
+            color: #d14;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>EmotiFace LED Project</h1>
+    <p>Using a 32x8 LED Panel to Express Emotions in Cosplay</p>
+</header>
+
+<div class="container">
+    <!-- Abstract Section -->
+    <div class="section" id="abstract">
+        <h2>Abstract</h2>
+        <p>
+            <!-- ช่องสำหรับใส่บทคัดย่อ -->
+            This project, EmotiFace LED, uses a 32x8 WS2812B LED panel to display different facial expressions, making it ideal for enhancing cosplay characters by visually expressing emotions. By using LEDs as a facial display, this project offers a unique, customizable, and interactive way to bring characters to life.
+        </p>
+    </div>
+
+    <!-- Project Details Section -->
+    <div class="section" id="details">
+        <h2>Project Details</h2>
+        <p>
+            <!-- ช่องสำหรับใส่รายละเอียดเพิ่มเติม -->
+            The EmotiFace LED project integrates LED technology with microcontrollers to create a portable and customizable emotional display. This section can include information about the hardware components, circuit design, programming logic, and more.
+        </p>
+    </div>
+
+    <!-- Source Code Section -->
+    <div class="section" id="source-code">
+        <h2>Source Code</h2>
+        <div class="source-code">
+            <code>
+                <!-- ช่องสำหรับใส่ Source Code (แก้ไขให้เป็นโค้ดที่ต้องการ) -->
+                #include &lt;FastLED.h&gt;
+                #define NUM_LEDS 256
+                #define DATA_PIN 12
+                CRGB leds[NUM_LEDS];
+                
+                void setup() {
+                    FastLED.addLeds&lt;WS2812, DATA_PIN, RGB&gt;(leds, NUM_LEDS);
+                    FastLED.setBrightness(10);
+                }
+                
+                void loop() {
+                    // Example animation code
+                }
+            </code>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
