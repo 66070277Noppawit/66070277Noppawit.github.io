@@ -233,15 +233,15 @@ int normal1[8][32]{
 const char WIFI_SSID[] = "";
 const char WIFI_PASSWORD[] = ""; 
 
-const char MQTT_BROKER_ADRRESS[] = "test.mosquitto.org";  // CHANGE TO MQTT BROKER'S ADDRESS
+const char MQTT_BROKER_ADRRESS[] = "test.mosquitto.org";
 const int MQTT_PORT = 1883;
-const char MQTT_CLIENT_ID[] = "เปลี่ยนเป็นอะไรก็ได้ที่ไม่ซ้ำกับเพื่อนและห้ามซ้ำกับในเว็ป";  // CHANGE IT AS YOU DESIRE
-const char MQTT_USERNAME[] = "";                                            // CHANGE IT IF REQUIRED, empty if not required
-const char MQTT_PASSWORD[] = "";                                            // CHANGE IT IF REQUIRED, empty if not required
+const char MQTT_CLIENT_ID[] = "";
+const char MQTT_USERNAME[] = "";
+const char MQTT_PASSWORD[] = "";
 
 // The MQTT topics that Arduino should publish/subscribe
-const char PUBLISH_TOPIC[] = "phycom/Ardu";    // CHANGE IT AS YOU DESIRE
-const char SUBSCRIBE_TOPIC[] = "phycom/Ardu";  // CHANGE IT AS YOU DESIRE
+const char PUBLISH_TOPIC[] = "phycom/Ardu";
+const char SUBSCRIBE_TOPIC[] = "phycom/Ardu";
 
 const int PUBLISH_INTERVAL = 60 * 1000;  // 60 seconds
 
@@ -373,8 +373,8 @@ void messageHandler(String &topic, String &payload) {
 #include &lt;WiFiS3.h&gt;
 #include &lt;MQTTClient.h&gt;
                             
-const char WIFI_SSID[] = "Xiao";          
-const char WIFI_PASSWORD[] = "Natokung";  
+const char WIFI_SSID[] = "";          
+const char WIFI_PASSWORD[] = "";  
                             
 const char MQTT_BROKER_ADDRESS[] = "test.mosquitto.org";  
 const int MQTT_PORT = 1883;
