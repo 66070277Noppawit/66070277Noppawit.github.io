@@ -3,7 +3,7 @@
 ---
 
 # Physical Computing Project 2024 - IT KMITL
-จัดทำโดย
+##จัดทำโดย
 
 ![Noppawit](Image/Noppawit.jpg)
 66070277 นพวิชญ์ ประทุมชาติ
