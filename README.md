@@ -3,7 +3,7 @@
 ---
 
 # Physical Computing Project 2024 - IT KMITL
-
+![Noppawit](images/Noppawit.jpg)
 66070277 นพวิชญ์ ประทุมชาติ  
 66070245 คณิตพัฒน์ เตชะอัครเศรษฐ์  
 66070266 ธนภัทร อิ่มใจ  
