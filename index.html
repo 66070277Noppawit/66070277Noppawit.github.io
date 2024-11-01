@@ -10,39 +10,105 @@
 </head>
 
 <body>
-    <div class=" bg-white">
+    <div class="bg-white">
         <nav class="mx-auto flex h-[50px] w-full items-center justify-center bg-[#eae3c9]">
             <div class="container mx-auto flex h-full items-center justify-between p-4">
                 <div class="font-semibold">EmotiFace LED Project</div>
-                <div></div>
+                <div class="space-x-6">
+                    <a href="#source-code">Source Code</a>
+                    <a href="#teammember">Team Member</a>
+                </div>
             </div>
         </nav>
         <div class="container mx-auto mt-5 space-y-6 text-lg">
             <div id="abstract">
-                <h2 class="font-bold">Purpose</h2>
+                <h2 class="font-bold text-lg">Abstract</h2>
                 <p class="py-4">
-                    This project, EmotiFace LED, uses a 32x8 WS2812B LED panel to display different facial expressions,
-                    making it ideal for enhancing cosplay characters by visually expressing emotions. By using LEDs as a
-                    facial display, this project offers a unique, customizable, and interactive way to bring characters
-                    to life.
+                    โครงการนี้มีวัตถุประสงค์ในการพัฒนา “EmotiFace LED”
+                    ซึ่งเป็นอุปกรณ์ที่สามารถแสดงสีหน้าและอารมณ์ผ่านแผงไฟ LED ชนิด WS2812B ขนาด 32x8
+                    เพื่อนำไปใช้ในกิจกรรม Cosplay โดยตัวอุปกรณ์นี้จะสามารถแสดงสีหน้าในลักษณะต่างๆ เช่น การยิ้ม ความเศร้า
+                    และการแสดงออกทางอารมณ์อื่นๆ ได้อย่างสมจริง
+                    และมีความยืดหยุ่นในการใช้งานผ่านการควบคุมจากระยะไกลด้วยระบบ IoT (Internet of Things)
+                    อุปกรณ์ “EmotiFace LED”
+                    นี้ถูกออกแบบมาเพื่อให้สามารถปรับเปลี่ยนสีหน้าได้ตามต้องการผ่านคำสั่งจากผู้ใช้
+                    ทำให้การแสดงสีหน้าสามารถปรับให้สอดคล้องกับสถานการณ์ต่างๆ ได้ โดยใช้ระบบไฟ LED
+                    ซึ่งทำให้เกิดความชัดเจนและสามารถดึงดูดความสนใจได้ดี นอกจากนี้
+                    อุปกรณ์นี้ยังมีขนาดกะทัดรัดและง่ายต่อการติดตั้ง โดยเฉพาะสำหรับนักแสดง Cosplay
+                    ที่ต้องการการแสดงออกทางสีหน้าที่โดดเด่นและน่าดึงดูด
+                    <br />
+                    ระบบนี้ยังสามารถเชื่อมต่อกับแพลตฟอร์มต่างๆ ผ่านระบบ MQTT Protocol
+                    ทำให้สามารถควบคุมอุปกรณ์ได้จากระยะไกล ซึ่งช่วยเพิ่มความสะดวกในการใช้งาน
+                    และเปิดโอกาสให้นำไปใช้ในกิจกรรมต่างๆ ที่ต้องการการสื่อสารด้วยภาพและแสงสี นอกจากนี้
+                    ยังสามารถพัฒนาและปรับแต่งเพิ่มเติมเพื่อใช้งานในด้านอื่นๆ เช่น การแสดงสีหน้าในสื่อบันเทิง
+                    งานนิทรรศการ หรืองานสื่อสารเชิงโต้ตอบ
+                </p>
+                <p class="py-4">
+                    ระบบนี้ยังสามารถเชื่อมต่อกับแพลตฟอร์มต่างๆ ผ่านระบบ MQTT Protocol
+                    ทำให้สามารถควบคุมอุปกรณ์ได้จากระยะไกล ซึ่งช่วยเพิ่มความสะดวกในการใช้งาน
+                    และเปิดโอกาสให้นำไปใช้ในกิจกรรมต่างๆ ที่ต้องการการสื่อสารด้วยภาพและแสงสี นอกจากนี้
+                    ยังสามารถพัฒนาและปรับแต่งเพิ่มเติมเพื่อใช้งานในด้านอื่นๆ เช่น การแสดงสีหน้าในสื่อบันเทิง
+                    งานนิทรรศการ หรืองานสื่อสารเชิงโต้ตอบ
                 </p>
             </div>
 
             <!-- Project Details Section -->
             <div class="section" id="details">
-                <h2 class="font-bold">Project Details</h2>
+                <h2 class="font-bold text-lg">Project Details</h2>
                 <p class="py-4">
                     <!-- ช่องสำหรับใส่รายละเอียดเพิ่มเติม -->
-                    The EmotiFace LED project integrates LED technology with microcontrollers to create a portable and
-                    customizable emotional display. This section can include information about the hardware components,
-                    circuit design, programming logic, and more.
+                    การทำงานของระบบ แผง LED ขนาด 32x8 จะทำหน้าที่แสดงสีหน้าต่าง ๆ ตามคำสั่งที่ส่งมาจากอุปกรณ์ควบคุม เช่น
+                    มือถือ หรือสั่งงานผ่านแอปพลิเคชันที่เชื่อมต่อ Wi-Fi โดยการควบคุมทำผ่านซอฟต์แวร์บน Arduino ใช้ไลบรารี
+                    FastLED และการส่งข้อมูลผ่านระบบ MQTT เพื่อความสะดวกและความรวดเร็วในการแสดงผลแบบทันทีทันใด
                 </p>
             </div>
 
+            <!-- Why -->
+            <h2 class="font-bold text-lg">Why our project??</h2>
+            <ul class="list-disc pl-8">
+                <li>เปลี่ยนการแสดงผลได้หลากหลายรูปแบบ: สามารถเปลี่ยนสีหน้าได้ตามต้องการเพื่อแสดงอารมณ์หลากหลาย เช่น ยิ้ม
+                    โกรธ หรือเศร้า</li>
+                <li>ควบคุมได้แบบไร้สาย: ผู้ใช้งานสามารถสั่งการและปรับเปลี่ยนการแสดงผลได้จากระยะไกลผ่าน Wi-Fi
+                    สะดวกต่อการใช้งานขณะ Cosplay</li>
+                <li>การแสดงสีได้หลากหลาย: รองรับการแสดงสีได้มากถึง 16,777,216 สี
+                    สร้างความสมจริงให้กับตัวละครและเพิ่มความมีชีวิตชีวา</li>
+            </ul>
+            <!-- Benefit -->
+            <h2 class="font-bold text-lg"></h2>
+            <ul class="list-disc pl-8">
+                <li>ประยุกต์ใช้ในการแสดงหรือคอนเสิร์ต: แผงไฟ LED สามารถใช้เป็นอุปกรณ์เสริมสำหรับการแสดงบนเวที
+                    เพิ่มความโดดเด่นให้กับผู้สวมใส่</li>
+                <li>สร้างสรรค์ในการ Cosplay: เหมาะสำหรับการใช้งาน Cosplay
+                    ที่ต้องการแสดงอารมณ์หรือคาแรคเตอร์ของตัวละครได้สมจริงยิ่งขึ้น</li>
+                <li>ใช้งานในเชิงการศึกษาและพัฒนาทักษะ:
+                    โปรเจกต์นี้สามารถใช้เป็นพื้นฐานในการเรียนรู้การเขียนโปรแกรมควบคุมฮาร์ดแวร์และระบบ IoT
+                    รวมถึงการทำงานของระบบสื่อสารแบบไร้สาย</li>
+            </ul>
+
+            <!-- Components -->
+            <h2 class="font-bold text-lg">Components for Project</h2>
+            <div id="components" class="flex items-center justify-center gap-4">
+                <a
+                    class="block max-w-sm p-6 h-[300px] bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 flex flex-col justify-between">
+
+                    <img class="max-h-[200px] max-w-[300px]" src="Image/Arduino_UNO_R4_WIFI.jpg" alt="Arduino">
+                    <p class="font-normal text-gray-700 text-center">Arduino UNO R4 Wifi</p>
+                </a>
+                <a
+                    class="block max-w-sm p-6 bg-white h-[300px] border border-gray-200 rounded-lg shadow hover:bg-gray-100 flex flex-col justify-between">
+
+                    <img class="max-h-[200px] max-w-[300px]" src="Image/32x8LEDWS2812B.jpg" alt="Arduino">
+                    <p class="font-normal text-gray-700 dark:text-gray-400 text-center">32 x 8 LED WS2812B</p>
+                </a>
+            </div>
+
+
+
             <!-- Source Code Section -->
-            <div class="" id="source-code">
-                <h2 class="font-bold">Source Code</h2>
-                <div class="my-4 relative overflow-x-auto whitespace-pre-wrap shadow-2xl border-2 bg-gray-200 px-4">
+            <h2 class="font-bold text-lg">Source Code</h2>
+            <div class="grid grid-cols-2 gap-2" id="source-code">
+                <p class="text-center">ส่วนของตัวรับ</p>
+                <p class="text-center">ส่วนของตัวส่ง</p>
+                <div class="my-4 relative overflow-x-auto whitespace-pre-wrap shadow-2xl border-2 px-4 bg-gray-200">
                     <button type="button"
                         class="absolute top-2 right-0 text-white bg-gray-500 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2"
                         onclick="myFunction()">
@@ -54,14 +120,15 @@
 
                         <span class="sr-only">Icon description</span>
                     </button>
-                    <code id="arduinocode">
-#include <FastLED.h>
+                    <div class="h-[500px] overflow-y-auto">
+                        <code id="arduinocode">
+#include &lt;FastLED.h&gt;
 #define NUM_LEDS 256
 #define DATA_PIN 12
 CRGB leds[NUM_LEDS];
-#include <WiFiS3.h>
-#include <MQTTClient.h>
-#include <string.h>
+#include &lt;WiFiS3.h&gt;
+#include &lt;MQTTClient.h&gt;
+#include &lt;string.h&gt;
 
 int waiting[8][32]{
   { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 },
@@ -162,14 +229,9 @@ int normal1[8][32]{
   {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}																															
 };
 
-/*
- *
- * This Arduino UNO R4 code is made available for public use without any restriction
- *
- */
 
-const char WIFI_SSID[] = "Xiao";                 // CHANGE TO YOUR WIFI SSID
-const char WIFI_PASSWORD[] = "Natokung";  // CHANGE TO YOUR WIFI PASSWORD
+const char WIFI_SSID[] = "";
+const char WIFI_PASSWORD[] = ""; 
 
 const char MQTT_BROKER_ADRRESS[] = "test.mosquitto.org";  // CHANGE TO MQTT BROKER'S ADDRESS
 const int MQTT_PORT = 1883;
@@ -189,16 +251,16 @@ MQTTClient mqtt = MQTTClient(256);
 unsigned long lastPublishTime = 0;
 
 void ledshow(int a[8][32]) {
-  FastLED.addLeds<WS2812, DATA_PIN, RGB>(leds, NUM_LEDS);
-  for (int j = 0; j < 32; j++) {
-    for (int i = 0; i < 8; i++) {
+  FastLED.addLeds&lt;WS2812, DATA_PIN, RGB&gt;(leds, NUM_LEDS);
+  for (int j = 0; j &lt; 32; j++) {
+    for (int i = 0; i &lt; 8; i++) {
       leds[j * 8 + i] = CHSV(0, 0, 0);
     }
   }
   FastLED.show();
   FastLED.setBrightness(10);
-  for (int j = 0; j < 32; j++) {
-    for (int i = 0; i < 8; i++) {
+  for (int j = 0; j &lt; 32; j++) {
+    for (int i = 0; i &lt; 8; i++) {
       if (!(j & 1) and a[i][j] == 1) leds[j * 8 + i] = CHSV(0, 255, 255);
       if (j & 1 and a[i][j] == 1) leds[j * 8 + 7 - i] = CHSV(0, 255, 255);
       //replace the two lines above with these two  to use Random HSV colors
@@ -212,10 +274,10 @@ void ledshow(int a[8][32]) {
 }
 
 void setup() {
-  FastLED.addLeds<WS2812, DATA_PIN, RGB>(leds, NUM_LEDS);
+  FastLED.addLeds&lt;WS2812, DATA_PIN, RGB&gt;(leds, NUM_LEDS);
   FastLED.setBrightness(10);
-  // for (int j = 0; j < 32; j++) {
-  //   for (int i = 0; i < 8; i++) {
+  // for (int j = 0; j &lt; 32; j++) {
+  //   for (int i = 0; i &lt; 8; i++) {
   //     if (!(j & 1) and waiting[i][j] == 1) leds[j * 8 + i] = CHSV(0, 255, 255);
   //     if (j & 1 and waiting[i][j] == 1) leds[j * 8 + 7 - i] = CHSV(0, 255, 255);
   //     //replace the two lines above with these two  to use Random HSV colors
@@ -231,15 +293,11 @@ void setup() {
 
   int status = WL_IDLE_STATUS;
   while (status != WL_CONNECTED) {
-    Serial.print("Arduino UNO R4 - Attempting to connect to SSID: ");
+    Serial.print("Attempting to connect to SSID: ");
     Serial.println(WIFI_SSID);
-    // Connect to WPA/WPA2 network. Change this line if using open or WEP network:
     status = WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
-
-    // wait 10 seconds for connection:
     delay(10000);
   }
-  // print your board's IP address:
   Serial.print("IP Address: ");
   Serial.println(WiFi.localIP());
 
@@ -255,7 +313,7 @@ void connectToMQTT() {
   // Create a handler for incoming messages
   mqtt.onMessage(messageHandler);
 
-  Serial.print("Arduino UNO R4 - Connecting to MQTT broker");
+  Serial.print("Connecting to MQTT broker");
 
   while (!mqtt.connect(MQTT_CLIENT_ID, MQTT_USERNAME, MQTT_PASSWORD)) {
     Serial.print(".");
@@ -264,40 +322,22 @@ void connectToMQTT() {
   Serial.println();
 
   if (!mqtt.connected()) {
-    Serial.println("Arduino UNO R4 - MQTT broker Timeout!");
+    Serial.println("MQTT broker Timeout!");
     return;
   }
 
   // Subscribe to a topic, the incoming messages are processed by messageHandler() function
   if (mqtt.subscribe(SUBSCRIBE_TOPIC))
-    Serial.print("Arduino UNO R4 - Subscribed to the topic: ");
+    Serial.print("Subscribed to the topic: ");
   else
-    Serial.print("Arduino UNO R4 - Failed to subscribe to the topic: ");
+    Serial.print("Failed to subscribe to the topic: ");
 
   Serial.println(SUBSCRIBE_TOPIC);
-  Serial.println("Arduino UNO R4 - MQTT broker Connected!");
+  Serial.println("MQTT broker Connected!");
   ledshow(blank);
 }
 
-// void sendToMQTT() {
-
-//   int val = millis();
-//   //int val = analogRead(A0);
-//   String val_str = String(val);
-
-//   // Convert the string to a char array for MQTT publishing
-//   char messageBuffer[10];
-//   val_str.toCharArray(messageBuffer, 10);
-
-//   // Publish the message to the MQTT topic
-//   mqtt.publish(PUBLISH_TOPIC, messageBuffer);
-
-//   // Print debug information to the Serial Monitor in one line
-//   Serial.println("Arduino UNO R4 - sent to MQTT: topic: " + String(PUBLISH_TOPIC) + " | payload: " + String(messageBuffer));
-// }
-
 void messageHandler(String &topic, String &payload) {
-  Serial.println("a" + payload);
   if (payload.equals("1")) {
     ledshow(glass);
   } else if (payload.equals("2")) {
@@ -311,14 +351,168 @@ void messageHandler(String &topic, String &payload) {
   } else if (payload.equals("6")) {
     ledshow(lookup);
   }
-
-  // You can process the incoming data , then control something
-  /*
-  process something
-  */
 }
           </code>
+                    </div>
                 </div>
+
+                <div class="my-4 relative overflow-x-auto whitespace-pre-wrap shadow-2xl border-2 px-4 bg-gray-200">
+                    <button type="button"
+                        class="absolute top-2 right-0 text-white bg-gray-500 hover:bg-gray-600 focus:ring-4 focus:outline-none focus:ring-gray-300 font-medium rounded-lg text-sm p-2.5 text-center inline-flex items-center me-2"
+                        onclick="myFunction()">
+                        <svg class="w-6 h-6 text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linejoin="round" stroke-width="2"
+                                d="M9 8v3a1 1 0 0 1-1 1H5m11 4h2a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1h-7a1 1 0 0 0-1 1v1m4 3v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-7.13a1 1 0 0 1 .24-.65L7.7 8.35A1 1 0 0 1 8.46 8H13a1 1 0 0 1 1 1Z" />
+                        </svg>
+
+                        <span class="sr-only">Icon description</span>
+                    </button>
+                    <div class="h-[500px] overflow-auto">
+                        <code id="arduinocode1">
+#include &lt;WiFiS3.h&gt;
+#include &lt;MQTTClient.h&gt;
+                            
+const char WIFI_SSID[] = "Xiao";          
+const char WIFI_PASSWORD[] = "Natokung";  
+                            
+const char MQTT_BROKER_ADDRESS[] = "test.mosquitto.org";  
+const int MQTT_PORT = 1883;
+const char MQTT_CLIENT_ID[] = "ArduProj";  
+const char MQTT_USERNAME[] = "";                                            
+const char MQTT_PASSWORD[] = "";                                            
+                            
+const char PUBLISH_TOPIC[] = "phycom/Ardu"; 
+const char SUBSCRIBE_TOPIC[] = "phycom/Ardu";   
+                            
+const int PUBLISH_INTERVAL = 60 * 1000;
+                            
+const int BUTTON_PIN_5 = 5;
+const int BUTTON_PIN_6 = 6;
+const int BUTTON_PIN_7 = 7;
+const int BUTTON_PIN_10 = 10;
+const int BUTTON_PIN_11 = 11;
+const int BUTTON_PIN_12 = 12;
+                            
+WiFiClient network;
+MQTTClient mqtt = MQTTClient(256);
+                            
+unsigned long lastPublishTime = 0;
+                            
+void setup() {
+    Serial.begin(9600);
+                            
+    pinMode(BUTTON_PIN_5, INPUT_PULLUP);
+    pinMode(BUTTON_PIN_6, INPUT_PULLUP);
+    pinMode(BUTTON_PIN_7, INPUT_PULLUP);
+    pinMode(BUTTON_PIN_10, INPUT_PULLUP);
+    pinMode(BUTTON_PIN_11, INPUT_PULLUP);
+    pinMode(BUTTON_PIN_12, INPUT_PULLUP);
+                            
+    int status = WL_IDLE_STATUS;
+    while (status != WL_CONNECTED) {
+        Serial.print("Arduino UNO R4 - Attempting to connect to SSID: ");
+        Serial.println(WIFI_SSID);
+        status = WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+        delay(1000);
+    }
+                            
+    Serial.print("IP Address: ");
+    Serial.println(WiFi.localIP());
+                            
+    connectToMQTT();
+}
+                            
+void loop() {
+    mqtt.loop();
+                            
+    if (digitalRead(BUTTON_PIN_5) == LOW) {
+        sendToMQTT("1");
+        delay(200); 
+    }
+    if (digitalRead(BUTTON_PIN_6) == LOW) {
+        sendToMQTT("2");
+        delay(200); 
+    }
+    if (digitalRead(BUTTON_PIN_7) == LOW) {
+        sendToMQTT("3");
+        delay(200); 
+    }
+    if (digitalRead(BUTTON_PIN_10) == LOW) {
+        sendToMQTT("4");
+        delay(200); 
+    }
+    if (digitalRead(BUTTON_PIN_11) == LOW) {
+        sendToMQTT("5");
+        delay(200); 
+    }
+    if (digitalRead(BUTTON_PIN_12) == LOW) {
+        sendToMQTT("6");
+        delay(200); 
+    }
+}
+                            
+void connectToMQTT() {
+    mqtt.begin(MQTT_BROKER_ADDRESS, MQTT_PORT, network);
+    mqtt.onMessage(messageHandler);
+                            
+    Serial.print("Arduino UNO R4 - Connecting to MQTT broker");
+                            
+    while (!mqtt.connect(MQTT_CLIENT_ID, MQTT_USERNAME, MQTT_PASSWORD)) {
+        Serial.print(".");
+        delay(100);
+    }
+    Serial.println();
+                            
+    if (!mqtt.connected()) {
+      Serial.println("Arduino UNO R4 - MQTT broker Timeout!");
+      return;
+    }
+                            
+    if (mqtt.subscribe(SUBSCRIBE_TOPIC)) {
+        Serial.print("Arduino UNO R4 - Subscribed to the topic: ");
+    } else {
+        Serial.print("Arduino UNO R4 - Failed to subscribe to the topic: ");
+    }                       
+    Serial.println(SUBSCRIBE_TOPIC);
+    Serial.println("Arduino UNO R4 - MQTT broker Connected!");
+}
+                            
+void sendToMQTT(const String& message) {
+    mqtt.publish(PUBLISH_TOPIC, message.c_str());
+    Serial.println("Arduino UNO R4 - sent to MQTT: topic: " + String(PUBLISH_TOPIC) + " | payload: " + message);
+}
+                            
+void messageHandler(String &topic, String &payload) {
+    Serial.println("Arduino UNO R4 - received from MQTT: topic: " + topic + " | payload: " + payload);
+}
+                    </code>
+                    </div>
+                </div>
+            </div>
+            <h2 class="font-bold text-lg">Team Member</h2>
+            <div class="grid grid-cols-3 w-full py-4 items-center justify-center" id="teammember">
+                <a
+                    class="block max-w-sm p-6  bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 flex flex-col justify-between">
+
+                    <img class="h-[300px] object-contain" height="200" src="Image/Kanidpat.jpeg" alt="Arduino">
+                    <p class="font-normal text-gray-700 text-center py-2">นายคณิตพัฒน์ เตชะอัครเศรษฐ์</p>
+                    <p class="font-normal text-gray-700 text-center">66070245</p>
+                </a>
+                <a
+                    class="block max-w-sm p-6  bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 flex flex-col justify-between">
+
+                    <img class="h-[300px] object-contain" height="200" src="Image/Thanaphat.jpg" alt="Arduino">
+                    <p class="font-normal text-gray-700 text-center py-2">นายธนภัทร อิ่มใจ</p>
+                    <p class="font-normal text-gray-700 text-center">66070266</p>
+                </a>
+                <a
+                    class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 flex flex-col justify-between">
+
+                    <img class="h-[300px] object-contain" height="200" src="Image/Noppawit.jpg" alt="Arduino">
+                    <p class="font-normal text-gray-700 text-center py-2">นายนพวิชญ์ ประทุมชาติ</p>
+                    <p class="font-normal text-gray-700 text-center">66070277</p>
+                </a>
             </div>
         </div>
         <div class="bottom-0 mx-auto flex h-[50px] w-full items-center justify-center bg-[#eae3c9]">
@@ -329,17 +523,12 @@ void messageHandler(String &topic, String &payload) {
 </body>
 <script>
     function myFunction() {
-        // // Get the text field
         var copyText = document.getElementById("arduinocode");
-
-        //Select the text field
-        // copyText.select();
-        //copyText.setSelectionRange(0, 99999); // For mobile devices
-
-        // Copy the text inside the text field
         navigator.clipboard.writeText(copyText.innerText);
-
-        // Alert the copied text
+    }
+    function myFunction1() {
+        var copyText = document.getElementById("arduinocode1");
+        navigator.clipboard.writeText(copyText.innerText);
     }
 </script>
 
