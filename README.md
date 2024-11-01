@@ -1,7 +1,3 @@
-นี่คือตัวอย่างไฟล์ `README.md` สำหรับโปรเจกต์ *EmotiFace LED* พร้อมการจัดรูปแบบให้ดูดีและเข้าใจง่าย:
-
----
-
 # Physical Computing Project 2024 - IT KMITL
 ---
 ## จัดทำโดย
